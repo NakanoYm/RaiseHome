@@ -239,6 +239,24 @@ a {
   background: #FFFFFF;
 }
 
+.bottom-nav__container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13vw;
+}
+
+@media (min-width: 600px) {
+  .bottom-nav__container {
+    width: 7vw;
+  }
+}
+@media (min-width: 835px) {
+  .bottom-nav__container {
+    width: 4vw;
+  }
+}
 .main-menu {
   position: relative;
   width: 100%;
