@@ -1,0 +1,169 @@
+.submit-btn__container {
+  width: 58vw;
+  min-height: 42px;
+  background: #55504A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+
+@media(min-width: 600px) {
+  .submit-btn__container {
+    width: 26vw;
+  }
+}
+
+@media(min-width: 835px) {
+  .submit-btn__container {
+    width: 15vw;
+
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  background: #55504A;
+  border: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.send {
+  padding-left: 25%;
+}
+
+.inquiry {
+  padding-left: 10%;
+}
+
+
+
+.arrow {
+  position: relative;
+  width: 17px;
+  line-height: 4.53px;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+
+  width: 17px;
+  height: 1px;
+  background: #FFFFFF;
+
+  top: 50%;
+  right: 4.5px;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+  height: 0px;
+
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+
+  top: 40%;
+  right: 4.5px;
+
+  transform:
+    translateY(-25%) rotate(45deg);
+}
+
+.company-section-btn__container {
+  margin: 10% auto;
+}
+
+@media(min-width: 600px) {
+  .company-section-btn__container {
+    display: flex;
+    gap: 5%;
+  }
+}
+
+.submit-btn__container-white {
+  padding: 5% 0;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  width: 58vw;
+  min-height: 42px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 1px solid;
+}
+
+@media(min-width: 600px) {
+  .submit-btn__container-white {
+    padding: 2% 0;
+  }
+}
+
+.submit-btn-white {
+  width: 100%;
+  background: #FFFFFF;
+  border: none;
+  color: #55504A;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 15%;
+  cursor: pointer;
+}
+
+@media(min-width: 835px) {
+  .submit-btn-white {}
+}
+
+.gaiyou-btn,
+.access-btn {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-left: 25%;
+}
+
+.arrow-white {
+  position: relative;
+  width: 17px;
+  line-height: 4.53px;
+
+}
+
+.arrow-white::before {
+  content: "";
+  position: absolute;
+
+  width: 17px;
+  height: 1px;
+  background: #55504A;
+
+  top: 50%;
+  right: 1px;
+}
+
+.arrow-white::after {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+  height: 0px;
+
+  border-top: 1px solid #55504A;
+  border-right: 1px solid #55504A;
+
+  top: 40%;
+  right: 1px;
+
+  transform:
+    translateY(-25%) rotate(45deg);
+}
