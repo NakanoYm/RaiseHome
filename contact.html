@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gruppo&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <div class=header-main>
+            <a class="logo__image" href="index.html">
+                <img class="logo" src="images/logo.png" alt="" width="254" height="28">
+            </a>
+            <nav class="header__nav">
+                <a class="nav-text" href="company.html">会社概要</a>
+                <a class="nav-text" href="access.html">アクセス</a>
+                <a class="nav-text-black" href="contact.html">お問い合わせ</a>
+            </nav>
+
+            <div class="hamburger">
+                <button class="hamburger_button" type="button" aria-label="メニュー" onclick="location.href='index.html'">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+     <main class="subpage">
+
+        <div class="subpage-visual">
+            <div class="subpage-img__container">
+                <img class="subpage-img" src="images/contact_main.jpg" alt="" width="1440" height="372">
+            </div>
+            <div class="subpage-title__container">
+                <h1 class="subpage-title">お問い合わせ</h1>
+            </div>
+        </div>
+
+        <div class="contact-form__container">
+            <div class="contact-subtitle__container">
+                <h2 class="contact-subtitle">お問い合わせ・ご相談は<br>こちらのフォームから</h2>
+            </div>
+            <div class="contact-form">
+                <div class="contact-form-list">
+                    <div class="contact-sub-heading__container">
+                        <p class="contact-sub__heading">お名前</p>
+                        <p class="necessary">必須</p>
+                    </div>
+                    <div class="contact-sub-item__container">
+                        <p class="contact-sub__item">例）山田 太郎</p>
+                    </div>
+                    <div class="contact-sub-heading__container">
+                        <p class="contact-sub__heading">企業名</p>
+                    </div>
+                    <div class="contact-sub-item__container">
+                        <p class="contact-sub__item">例）株式会社RAISEHOME</p>
+                    </div>
+                    <div class="contact-sub-heading__container">
+                        <p class="contact-sub__heading">メールアドレス</p>
+                        <p class="necessary">必須</p>
+                    </div>
+                    <div class="contact-sub-item__container">
+                        <p class="contact-sub__item">例）example@mail.com</p>
+                    </div>
+                    <div class="contact-sub-heading__container">
+                        <p class="contact-sub__heading">お問い合わせ種別（選択してください）</p>
+                        <p class="necessary">必須</p>
+                    </div>
+                    <div class="contact-list">
+
+                        <label class="contact-list-item"><input type="radio" name="contact">ご質問</label>
+                        <label class="contact-list-item"><input type="radio" name="contact">ご要望</label>
+
+                        <label class="contact-list-item"><input type="radio" name="contact">お見積もり</label>
+                        <label class="contact-list-item"><input type="radio" name="contact">その他</label>
+
+                    </div>
+                    <div class="contact-sub-heading__container">
+                        <p class="contact-sub__heading">お問い合わせ内容</p>
+                        <p class="necessary">必須</p>
+                    </div>
+                    <div class="contact-sub-item__container_message">
+                        <p class="contact-sub__item">内容を入力してください。</p>
+                    </div>
+                    <div class="agree__container">
+                        <label class="agree">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            利用規約、プライバシーポリシーに同意する
+                        </label>
+                    </div>
+                </div>
+                <div class="submit-btn__container">
+                    <button class="submit-btn">
+                        <span class="send">送信する</span>
+                        <span class="arrow"></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+        <img class="footer-logo" src="images/logo-white.png" alt="" width="254" height="28">
+        <div class="footer-contents-icon">
+        <div class="footer-contents">
+            <a class="footer-item" href="">会社紹介</a>
+            <a class="footer-item" href="">アクセス</a>
+            <a class="footer-item" href="">お問い合わせ</a>
+        </div>
+        <div class="icon__container">
+            <img class="icon" src="images/akar-icons_x-fill.png" alt="" width="28" height="28">
+            <img class="icon" src="images/streamline_instagram-solid.png" alt="" width="28" height="28">
+            <img class="icon" src="images/mdi_youtube.png" alt="" width="28" height="28">
+        </div>
+        </div>
+</div>
+        <div class="copyright__container">
+            <p class="copyright">©2023RAISE HOME</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -6,6 +6,7 @@
     flex-direction: column;
     background-color: #55504A;
     align-items: center;
+    
 }
 
 @media(min-width: 600px) {
@@ -20,30 +21,44 @@
         flex-direction: row;
     }
 }
-
-.footer-logo__container {
+.footer__container {
     position: absolute;
-    top: 10%;
-    padding: 0 auto;
-}
+    top: 15%;
 
+}
 @media(min-width: 600px) {
-    .footer-logo__container {
-        top: 18%;
+    .footer__container {
+        top: 20%;
     }
 }
-
 @media(min-width: 835px) {
-    .footer-logo__container {
+    .footer__container {
         top: 50%;
         transform: translateY(-50%);
-        left: 12.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 35%;
+        padding-left: 15%;
+    }
+}
+@media(min-width: 600px) {
+    .footer-contents-icon {
+        display: flex;
+        flex-direction: row;
+        padding: 12% 0;
+        gap: 10%;
+    }
+}
+@media(min-width: 835px) {
+    .footer-contents-icon {
+        padding: 0%;
     }
 }
 
 .footer-logo {
     aspect-ratio: 254.07 / 28;
     width: 67vw;
+    justify-self: center;
 }
 
 @media(min-width: 600px) {
@@ -55,35 +70,32 @@
 @media(min-width: 835px) {
     .footer-logo {
         width: 18vw;
+        justify-self: unset;
     }
 }
 
 .footer-contents {
-    position: absolute;
-    top: 35%;
     display: flex;
     flex-direction: column;
-    left: 50%;
-    transform: translateX(-50%);
     align-content: space-between;
     gap: 1rem;
     height: auto;
+    padding-top: 20%;
+    padding-bottom: 10%;
 }
 
 @media(min-width: 600px) {
     .footer-contents {
         flex-direction: row;
-        top: 50%;
-        left: 17%;
-        width: 40vw;
+        width: 45vw;
         gap: 15%;
+        padding: 0%;
+        
     }
 }
 
 @media(min-width: 835px) {
     .footer-contents {
-        transform: translateY(-50%);
-        left: 50%;
         width: 25vw;
     }
 }
@@ -96,25 +108,20 @@
 }
 
 .icon__container {
-    position: absolute;
-    bottom: 25%;
     display: flex;
     justify-content: space-between;
     width: 36vw;
+    justify-self: center;
 }
 
 @media(min-width: 600px) {
-    .icon__container {
-        right: 17%;
-        top: 50%;
-        width: 15vw;
+    .icon__container { 
+       width: 15vw;
     }
 }
 
 @media(min-width: 835px) {
     .icon__container {
-        transform: translateY(-50%);
-        right: 12.5%;
         width: 132px;
     }
 }
