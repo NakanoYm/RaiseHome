@@ -769,6 +769,8 @@ a {
 
 .contact-img {
   aspect-ratio: 375/547;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 600px) {
