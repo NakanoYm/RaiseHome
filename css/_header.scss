@@ -4,19 +4,7 @@
   width: 100%;
   z-index: 10;
   padding: 2% 0%;
-  max-width: 375px;
-}
-
-@media(min-width: 376px) {
-  .header {
-    max-width: 835px;
-  }
-}
-
-@media(min-width: 836px) {
-  .header {
-    max-width: 1440px;
-  }
+  max-width: 100%;
 }
 
 .header-main {
@@ -32,15 +20,9 @@
 .logo__image {
 
   width: 100%;
-  max-width: 228.07px;
+  max-width: 254.07px;
   align-items: center;
   padding-left: 5%;
-}
-
-@media (min-width: 375px) {
-  .logo__image {
-    width: 254.07px;
-  }
 }
 
 .logo {
@@ -55,8 +37,7 @@
 @media(min-width: 600px) {
   .header__nav {
     display: grid;
-    grid-template-columns: 104px 104px 120px;
-    justify-content: flex-end;
+    grid-template-columns: 1fr 1fr 1.2fr;
   }
 }
 
