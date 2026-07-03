@@ -13,167 +13,150 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <div class=header-main>
+        <div class="header-main">
             <div class="logo__image">
                 <img class="logo" src="images/logo.png" alt="" width="254" height="28">
             </div>
             <nav class="header__nav">
-                <a class="nav-text" href="company.html">会社概要</a>
-                <a class="nav-text" href="access.html">アクセス</a>
-                <a class="nav-text-black" href="contact.html">お問い合わせ</a>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="company.html">会社概要</a></li>
+                    <li class="header-nav__item"><a href="access.html">アクセス</a></li>
+                    <li class="header-nav__item"><a href="contact.html">お問い合わせ</a></li>
+                </ul>
             </nav>
 
             <div class="hamburger">
-                <button class="hamburger_button" type="button" aria-label="メニュー" onclick="location.href='menu.html'">
+                <button class="hamburger_button" type="button" aria-label="メニュー">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </div>
+
     </header>
 
     <main class="main">
-        <div class="slider">
-            <div class="slider-track">
-
-                <div class="main-visual">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img class="main-img" src="images/coporate_top_1.jpg" alt="" width="1440" height="835">
-                    <div class="main-title__container">
-                        <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
-                    </div>
-                    <div class="raise-home__container">
-                        <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
-                    </div>
-                    <div class="scroll__container">
-                        <p class="scroll">Scroll</p>
-                    </div>
-                    <div class=" bottom-nav__container">
-                        <img class="bottom-nav" src="images/carousel.png" alt="" width="62" height="10">
-                    </div>
-                </div>
-                <div class="main-visual">
-                    <img class="main-img" src="images/coporate_top_2.jpg" alt="" width="1440" height="835">
-                    <div class="main-title__container">
-                        <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
-                    </div>
-                    <div class="raise-home__container">
-                        <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
-                    </div>
-                    <div class="scroll__container">
-                        <p class="scroll">Scroll</p>
-                    </div>
-                    <div class=" bottom-nav__container">
-                        <img class="bottom-nav" src="images/frame42.png" alt="" width="62" height="10">
-                    </div>
-                </div>
+                    <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
+                    <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
 
-                <div class="main-visual">
+                </div>
+                <div class="swiper-slide">
+                    <img class="main-img" src="images/coporate_top_2.jpg" alt="" width="1440" height="835">
+                    <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
+                    <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
+
+                </div>
+                <div class="swiper-slide">
                     <img class="main-img" src="images/corporate_top_3.jpg" alt="" width="1440" height="835">
-                    <div class="main-title__container">
-                        <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
-                    </div>
-                    <div class="raise-home__container">
-                        <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
-                    </div>
-                    <div class="scroll__container">
-                        <p class="scroll">Scroll</p>
-                    </div>
-                    <div class=" bottom-nav__container">
-                        <img class="bottom-nav" src="images/frame42_1.png" alt="" width="62" height="10">
-                    </div>
+                    <h2 class="main-title">未来と暮らしを<br>豊かにする家づくり</h2>
+                    <img class="raise-home" src="images/raisehome.png" alt="" width="161" height="57">
+
                 </div>
             </div>
 
+            <div class="swiper-pagination"></div>
+            <div class="scroll-area">
+                <div class="swiper-scrollbar"></div>
+                <p class="scroll">Scroll</p>
+            </div>
         </div>
 
     </main>
+
+
     <section class="service__section">
-        <h2 class="section__title">SERVICE</h2>
         <div class="service-visual">
+            <h2 class="section__title">SERVICE</h2>
             <h3 class="section-sub__title">住みよい暮らしをご提案<br class="sp-only">します</h3>
-            <p class="service-section__text">
+            <p class="section__text">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
-            <div class="service__container">
-                <div class=service__content>
-                    <img class="service-img" src="images/service_customer.png" alt="" width="520" height="293">
-                    <div class="service-text__container">
-                        <p class="section-text">個人のお客様</p>
-                    </div>
-                </div>
-                <div class=service__content>
-                    <img class="service-img" src="images/service_houjin.png" alt="" width="520" height="293">
-                    <div class="service-text__container">
-                        <p class="section-text">法人のお客様</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="service__list">
+                <li class="service__item">
+                    <a href="" class="service__link">
+                        <h4 class="service-title">個人のお客様</h4>
+                        <img class="service-img" src="images/service_customer.png" alt="" width="520" height="293">
+                    </a>
+                </li>
+                <li class="service__item box">
+                    <a href="" class="service__link">
+                        <h4 class="service-title">法人のお客様</h4>
+                        <img class="service-img" src="images/service_houjin.png" alt="" width="520" height="293">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="works__section">
+    <section class="works__section section--parallax">
 
         <div class="works-visual">
             <img class="works_0" src="images/works_0.png" alt="" width="1440" height="791">
 
+            <h2 class="section__title">WORKS</h2>
+            
+            <ul class="works__list">
+                
+                    <li class="works-gallery-figure"><img class="works-gallery__image"
+                            src="images/works_1.png" alt="" width="370" height="444" loading="lazy"></li>
+                    <li class="works-gallery-figure"><img class="works-gallery__image"
+                            src="images/works_2.jpg" alt="" width="345" height="218" loading="lazy"></li>
+                    <li class="works-gallery-figure"><img class="works-gallery__image"
+                            src="images/works_3.png" alt="" width="345" height="218" loading="lazy"></li>
+                    <li class="works-gallery-figure"><img class="works-gallery__image"
+                            src="images/works_4.png" alt="" width="345" height="218" loading="lazy"></li>
+                    <li class="works-gallery-figure"><img class="works-gallery__image"
+                            src="images/works_5.png" alt="" width="345" height="218" loading="lazy"></li>
+                    
+                    </ul>
+            
 
-            <h2 class="section-title-lg">WORKS</h2>
-
-            <div class="works_img_container">
-                <div class="works1_container">
-                    <img class="works_1" src="images/works_1.png" alt="" width="345" height="218">
-                </div>
-                <div class="works-img_contents">
-                    <div class="works2_container">
-                        <img class="works" src="images/works_2.jpg" alt="" width="345" height="218">
-                    </div>
-                    <div class="works3__container">
-                        <img class="works" src="images/works_3.png" alt="" width="247" height="156">
-                    </div>
-                    <div class="works3__container">
-                        <img class="works" src="images/works_4.png" alt="" width="247" height="156">
-                    </div>
-                    <div class="works3__container">
-                        <img class="works" src="images/works_5.png" alt="" width="247" height="156">
-                    </div>
-                </div>
-            </div>
-            <div class="yellow_container">
-                <img class="yellow" src="images/frame 364.jpg" alt="" width="73" height="10">
-            </div>
         </div>
+          
     </section>
     <section class="company__section">
-        <h2 class="section__title">COMPANY</h2>
         <div class="company-visual">
-            <div class="company-img__container">
-                <img class="company-img" src="images/company.png" alt="" width="560" height="335">
-            </div>
-            <div class="company-contents">
-                <h3 class="section-sub__title">未来と暮らしを造る会社</h3>
-                <p class="company-section-text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                </p>
+            <h2 class="section__title">COMPANY</h2>
+            <div class="company__container">
 
-                <div class="company-section-btn__container">
-                    <div class="submit-btn__container-white">
-                        <button class="submit-btn-white">
-                            <span class="gaiyou-btn">会社概要</span>
-                            <span class="arrow-white"></span>
+                <img class="company-img" src="images/company.png" alt="" width="560" height="335">
+
+                <div class="company-contents">
+                    <h3 class="section-sub__title">未来と暮らしを造る会社</h3>
+                    <p class="company-section-text">
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+
+                    <div class="company-section-btn__container">
+
+                        <button class="submit-btn">
+                            <span class="btn-text">会社概要</span>
+                            <span class="arrow"></span>
                         </button>
-                    </div>
-                    <div class="submit-btn__container-white">
-                        <button class="submit-btn-white">
-                            <span class="access-btn">アクセス</span>
-                            <span class="arrow-white"></span>
+
+                        <button class="submit-btn">
+                            <span class="btn-text">アクセス</span>
+                            <span class="arrow"></span>
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -182,23 +165,17 @@
     <section class="contact__section">
         <div class="contact-visual">
             <img class="contact-img" src="images/contact.png" alt="" width="1440" height="631">
-
-            <h2 class="section-title-lg">CONTACT</h2>
-
-
             <div class="contact__container">
+                <h2 class="section__title">CONTACT</h2>
+                <div class="contact__content">
+                    <h3 class="sub-title-contact">家づくりの<br class="sp-only">無料相談</h3>
+                    <p class=text-contact>毎日ご相談を受け付けていますので、お気軽にお越しください</p>
 
-                <h3 class="sub-title-contact">家づくりの<br class="sp-only">無料相談</h3>
-
-
-                <p class=text-contact>毎日ご相談を受け付けていますので、お気軽にお越しください</p>
-
-
-                <div class="submit-btn__container">
-                    <button class="submit-btn">
-                        <span class="inquiry">お問い合わせ</span>
-                        <span class="arrow"></span>
+                    <button class="submit-btn btn-black">
+                        <span class="btn-text">お問い合わせ</span>
+                        <span class="arrow btn-black"></span>
                     </button>
+
                 </div>
             </div>
     </section>

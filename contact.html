@@ -15,26 +15,28 @@
 </head>
 <body>
     <header class="header">
-        <div class=header-main>
+        <div class="header-main">
             <a class="logo__image" href="index.html">
                 <img class="logo" src="images/logo.png" alt="" width="254" height="28">
             </a>
             <nav class="header__nav">
-                <a class="nav-text" href="company.html">会社概要</a>
-                <a class="nav-text" href="access.html">アクセス</a>
-                <a class="nav-text-black" href="contact.html">お問い合わせ</a>
+                <ul class="header-nav__list">
+                <li class="header-nav__item"><a href="company.html">会社概要</a></li>
+                <li class="header-nav__item"><a href="access.html">アクセス</a></li>
+                <li class="header-nav__item"><a href="contact.html">お問い合わせ</a></li>
+                </ul>
             </nav>
 
             <div class="hamburger">
-                <button class="hamburger_button" type="button" aria-label="メニュー" onclick="location.href='index.html'">
+                <button class="hamburger_button" type="button" aria-label="メニュー">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </div>
+                
     </header>
-
      <main class="subpage">
 
         <div class="subpage-visual">
@@ -50,47 +52,34 @@
             <div class="contact-subtitle__container">
                 <h2 class="contact-subtitle">お問い合わせ・ご相談は<br>こちらのフォームから</h2>
             </div>
-            <div class="contact-form">
+            <form class="contact-form" action="" method="post" onsubmit="return validateForm()">
                 <div class="contact-form-list">
-                    <div class="contact-sub-heading__container">
-                        <p class="contact-sub__heading">お名前</p>
-                        <p class="necessary">必須</p>
+                    <div class="contact-form-item">
+                        <label for="fullname">お名前<span class="necessary">必須</span></label>
+                        <input type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" required>
                     </div>
-                    <div class="contact-sub-item__container">
-                        <p class="contact-sub__item">例）山田 太郎</p>
+                    <div class="contact-form-item">
+                        <label for="company">企業名</label>
+                        <input type="text" id="company" name="company" placeholder="例）株式会社RAISEHOME" required>
                     </div>
-                    <div class="contact-sub-heading__container">
-                        <p class="contact-sub__heading">企業名</p>
+                    <div class="contact-form-item">
+                        <label for="email">メールアドレス<span class="necessary">必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
                     </div>
-                    <div class="contact-sub-item__container">
-                        <p class="contact-sub__item">例）株式会社RAISEHOME</p>
-                    </div>
-                    <div class="contact-sub-heading__container">
-                        <p class="contact-sub__heading">メールアドレス</p>
-                        <p class="necessary">必須</p>
-                    </div>
-                    <div class="contact-sub-item__container">
-                        <p class="contact-sub__item">例）example@mail.com</p>
-                    </div>
-                    <div class="contact-sub-heading__container">
-                        <p class="contact-sub__heading">お問い合わせ種別（選択してください）</p>
-                        <p class="necessary">必須</p>
-                    </div>
+                        <p class="contact-sub-heading">お問い合わせ種別（選択してください）<span class="necessary">必須</span></p>
+                    
                     <div class="contact-list">
 
                         <label class="contact-list-item"><input type="radio" name="contact">ご質問</label>
                         <label class="contact-list-item"><input type="radio" name="contact">ご要望</label>
-
+                        <div class="break"></div>
                         <label class="contact-list-item"><input type="radio" name="contact">お見積もり</label>
                         <label class="contact-list-item"><input type="radio" name="contact">その他</label>
 
                     </div>
-                    <div class="contact-sub-heading__container">
-                        <p class="contact-sub__heading">お問い合わせ内容</p>
-                        <p class="necessary">必須</p>
-                    </div>
-                    <div class="contact-sub-item__container_message">
-                        <p class="contact-sub__item">内容を入力してください。</p>
+                    <div class="contact-form-item">
+                        <label for="inquiry">お問い合わせ内容<span class="necessary">必須</span></label>
+                        <input type="text" id="inquiry" name="inquiry" placeholder="内容を入力してください。" required>
                     </div>
                     <div class="agree__container">
                         <label class="agree">
@@ -102,12 +91,12 @@
                 </div>
                 <div class="submit-btn__container">
                     <button class="submit-btn">
-                        <span class="send">送信する</span>
+                        <span class="btn-text">送信する</span>
                         <span class="arrow"></span>
                     </button>
 
                 </div>
-            </div>
+            </form>
         </div>
 
     </main>

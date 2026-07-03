@@ -8,19 +8,20 @@ img {
         margin: 0% 
     }
 body {
-    
+    margin: 0%;
+    padding: 0;
     font-family: "Noto Sans JP";
     color: #55504A;
 }
 a {
     text-decoration: none;
     color: #55504A;
+    display: inline-block;
+}
+li {
+    list-style: none;
 }
 
-* {
-    margin: 0%;
-    padding: 0;
-}
 
 
 
