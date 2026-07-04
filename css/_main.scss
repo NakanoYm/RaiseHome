@@ -112,7 +112,7 @@
 .scroll-area {
     position: absolute;
     left: 2%;
-    bottom: 20%;
+    bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,11 +122,11 @@
 
 @media(min-width: 834px) {
     .scroll-area {
-        bottom: 25%;
+        bottom: 15%;
     }
 }
-
 .scroll {
+    
     font-family: 'Gtuppo';
     font-size: 16px;
     color: #FFFFFF;
@@ -134,8 +134,14 @@
     padding: 0;
 
 }
-
-@keyframes scroll {
+.scroll-line {
+    /*display: flex;
+    flex-direction: column;*/
+    width: 1px;
+    height: 103px;
+    background: #FFFFFF;
+}
+/*@keyframes scroll {
     0% {
         transform: translateY(0);
     }
@@ -143,7 +149,7 @@
     100% {
         transform: translateY(100px);
     }
-}
+}*/
 
 @media(min-width: 600px) {
     .scroll {
@@ -151,7 +157,7 @@
     }
 }
 
-.swiper-scrollbar {
+/*.swiper-scrollbar {
     position: relative;
 
 }
@@ -176,4 +182,4 @@
     .swiper-scrollbar::before {
         height: 160px;
     }
-}
+}*/

@@ -89,3 +89,25 @@ gsap.to(".works_0", {
     }
 
 });
+const scrollbar = document.querySelector('.scroll-line');
+let height = 0;
+
+/*function animate() {
+    height += direction;
+    
+    if(height >= 100 || height <= 0) {
+        direction *= -1;        
+    }
+    scrollbar.style.height = height + "px";
+    requestAnimationFrame(animate);
+}
+animate();*/
+
+gsap.from(".scroll-line", {
+    scaleY: 0,
+    transformOrigin: "top",
+    duration: 1.5,
+    ease: "power2.out",
+    repeat: -1,
+    repeatDelay: 0.5
+});

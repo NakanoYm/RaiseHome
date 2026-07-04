@@ -309,7 +309,7 @@ li {
 .scroll-area {
   position: absolute;
   left: 2%;
-  bottom: 20%;
+  bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +318,7 @@ li {
 
 @media (min-width: 834px) {
   .scroll-area {
-    bottom: 25%;
+    bottom: 15%;
   }
 }
 .scroll {
@@ -329,41 +329,54 @@ li {
   padding: 0;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100px);
-  }
+.scroll-line {
+  /*display: flex;
+  flex-direction: column;*/
+  width: 1px;
+  height: 103px;
+  background: #FFFFFF;
 }
+
+/*@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}*/
 @media (min-width: 600px) {
   .scroll {
     left: 2%;
   }
 }
-.swiper-scrollbar {
-  position: relative;
+/*.swiper-scrollbar {
+    position: relative;
+
 }
 
 .swiper-scrollbar::before {
-  animation: scroll 2s infinite;
-  background-color: #FFFFFF;
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 100px;
-  z-index: 10;
+    animation: scroll 2s infinite;
+    background-color: #FFFFFF;
+    content: "";
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+
+    width: 1px;
+    height: 100px;
+    z-index: 10;
 }
 
-@media (min-width: 834px) {
-  .swiper-scrollbar::before {
-    height: 160px;
-  }
-}
+@media(min-width: 834px) {
+    .swiper-scrollbar::before {
+        height: 160px;
+    }
+}*/
 .section__title {
   font-family: "Gruppo";
   font-size: 17vw;
