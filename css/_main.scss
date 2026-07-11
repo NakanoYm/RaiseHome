@@ -39,25 +39,23 @@
     text-align: center;
     padding: 2% 4%;
     font-weight: 700;
-    font-size: 28px;
+    font-size: clamp(7vw, 28px, 8vw) ;
 }
 @media(min-width: 600px) {
     .main-title {
         width: 61%;
-        font-size: 48px;
+        font-size: clamp(5vw, 36px, 6vw);
     }
 }
-@media(min-width: 1050px) {
+@media(min-width: 835px) {
     .main-title {
-        width: 38%;
-        
+        width: clamp(40%, 50%, 55%);
+        font-size: clamp(3vw, 48px, 3.3vw);
     }
 }
-
-
-@media(min-width: 1050px) {
+@media(min-width: 1300px) {
     .main-title {
-        font-size: 48px;
+        width: 40%;
     }
 }
 

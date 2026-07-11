@@ -9,6 +9,17 @@
     margin-bottom: 5%;
 
 }
+.contact-form-label {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 1%;
+}
+.contact-form-input {
+    padding-left: 3%;
+}
+.contact-form-input.contact-form-textarea {
+    padding-top: 3%;
+}
 .contact-list {
     display: flex;
     flex-wrap: wrap;
@@ -23,11 +34,17 @@
 .break {
     flex-basis: 100%;
 }
+
+@media (min-width: 768px) {
+  .break {
+    display: none;
+  }
+}
 label {
     display: block;
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 3%;
+    
     
 }
 .send {
@@ -37,7 +54,7 @@ label {
     display: flex;
     align-items: center;
     gap: 1%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 .agree input[type="checkbox"] {
     margin: 0;
@@ -48,7 +65,7 @@ input {
     font-weight: 500;
     color: #A09A93;
     height: 48px;
-    margin-bottom: 8%;
+    
 }
 #inquiry {
     height: 181px;
@@ -56,10 +73,10 @@ input {
 .necessary {
     font-size: 12px;
     font-weight: 700;
-    padding: 1% 2%;
+    padding: 2px 6px;
     background-color: #C54A49;
     color: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 6px;
     text-align: center;
     margin: 0%;
 }

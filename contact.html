@@ -55,31 +55,31 @@
             <form class="contact-form" action="" method="post" onsubmit="return validateForm()">
                 <div class="contact-form-list">
                     <div class="contact-form-item">
-                        <label for="fullname">お名前<span class="necessary">必須</span></label>
-                        <input type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" required>
+                        <label class="contact-form-label" for="fullname">お名前<span class="necessary">必須</span></label>
+                        <input class="contact-form-input" type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" required>
                     </div>
                     <div class="contact-form-item">
-                        <label for="company">企業名</label>
-                        <input type="text" id="company" name="company" placeholder="例）株式会社RAISEHOME" required>
+                        <label class="contact-form-label" for="company">企業名</label>
+                        <input class="contact-form-input" type="text" id="company" name="company" placeholder="例）株式会社RAISEHOME" required>
                     </div>
                     <div class="contact-form-item">
-                        <label for="email">メールアドレス<span class="necessary">必須</span></label>
-                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                        <label class="contact-form-label" for="email">メールアドレス<span class="necessary">必須</span></label>
+                        <input class="contact-form-input" type="email" id="email" name="email" placeholder="例）example@mail.com" required>
                     </div>
                         <p class="contact-sub-heading">お問い合わせ種別（選択してください）<span class="necessary">必須</span></p>
                     
                     <div class="contact-list">
 
-                        <label class="contact-list-item"><input type="radio" name="contact">ご質問</label>
-                        <label class="contact-list-item"><input type="radio" name="contact">ご要望</label>
+                        <label class="contact-list-item"><input type="radio" name="contact">ご質問</label class="contact-form-label">
+                        <label class="contact-list-item"><input type="radio" name="contact">ご要望</label class="contact-form-label">
                         <div class="break"></div>
-                        <label class="contact-list-item"><input type="radio" name="contact">お見積もり</label>
-                        <label class="contact-list-item"><input type="radio" name="contact">その他</label>
+                        <label class="contact-list-item"><input type="radio" name="contact">お見積もり</label class="contact-form-label">
+                        <label class="contact-list-item"><input type="radio" name="contact">その他</label class="contact-form-label">
 
                     </div>
                     <div class="contact-form-item">
-                        <label for="inquiry">お問い合わせ内容<span class="necessary">必須</span></label>
-                        <input type="text" id="inquiry" name="inquiry" placeholder="内容を入力してください。" required>
+                        <label class="contact-form-label" for="inquiry">お問い合わせ内容<span class="necessary">必須</span></label class="contact-form-label">
+                        <textarea class="contact-form-input contact-form-textarea" id="inquiry" name="inquiry" placeholder="内容を入力してください。" required></textarea>
                     </div>
                     <div class="agree__container">
                         <label class="agree">
@@ -89,13 +89,12 @@
                         </label>
                     </div>
                 </div>
-                <div class="submit-btn__container">
-                    <button class="submit-btn">
+               
+                    <button class="submit-btn btn-black">
                         <span class="btn-text">送信する</span>
-                        <span class="arrow"></span>
+                        <span class="arrow btn-black"></span>
                     </button>
 
-                </div>
             </form>
         </div>
 
