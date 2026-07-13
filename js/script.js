@@ -6,6 +6,12 @@ hamburgerButton.addEventListener('click', () => {
     headerNav.classList.toggle('is-active');
     hamburgerButton.classList.toggle('is-active');
 });
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 600) {
+    headerNav.classList.remove('is-active');
+    hamburgerButton.classList.remove('is-active');
+  }
+});
 function validateForm() {
     const fullname = document.getElementById('fullname').value;
     if (!/^.+ .+$/.test(fullname)) {

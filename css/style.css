@@ -70,26 +70,68 @@ li {
   aspect-ratio: 228.67/25.2;
 }
 
-.header__nav {
-  display: none;
-}
-
-.header__nav.is-active {
-  /*display: grid;*/
-  display: flex;
-  width: 70%;
-  height: 100vh;
-  justify-content: center;
+/*.header__nav {
   position: fixed;
   top: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 100vh;
+
   background: rgba(255, 255, 255, 0.9);
+  transform: translateX(100%);
+
+}
+@media(max-width: 599px) {
+  .header__nav {
+    transition: transform .4s ease;
+  }
+}
+.header__nav.is-active {
+  transform: translateX(0);
+
 }
 
-@media (min-width: 600px) {
-  .header__nav {
+@media(min-width: 600px) {
+  .header__nav,
+  .header__nav.is-active {
+    position: static;
+    width: auto;
+
+    transform: none;
+    transition: none;
+
     display: flex;
     height: 64px;
+
+  }
+}*/
+@media (max-width: 599px) {
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+  .header__nav.is-active {
+    transform: translateX(0);
+  }
+}
+@media (min-width: 600px) {
+  .header__nav {
+    position: static;
+    width: auto;
+    height: 64px;
+    display: flex;
+    transform: none;
+    transition: none;
   }
 }
 .header-nav__list {
